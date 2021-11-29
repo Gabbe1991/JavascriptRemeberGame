@@ -1,0 +1,4 @@
+#CardGrid{
+	display: grid;
+	grid-template: repeat(4, 200px) / repeat(12, 120px);
+}
