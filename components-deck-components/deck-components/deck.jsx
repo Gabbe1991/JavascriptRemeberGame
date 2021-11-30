@@ -10,7 +10,7 @@ export default function Deck() {
 
   useEffect(() => {
     getDeck(
-      "https://deckofcardsapi.com/api/deck/new/shuffle/?cards=2S,2S,2D,2D,2H,2H,2C,2C,3S,3S,3D,3D,3H,3H,3C,3C,4S,4S,4D,4D,4H,4H,4C,4C"
+      "https://deckofcardsapi.com/api/deck/new/shuffle/?cards=2S,2S,2D,2D,2H,2H,2C,2C,3S,3S,3D,3D,3H,3H,3C,3C,4S,4S,4D,4D,4H,4H,4C,4C,5D,5D,5C,5C,5H,5H,5S,5S,6D,6D,6C,6C,6H,6H,6S,6S,7D,7D,7C,7C,7H,7H,7S,7S"
     );
   }, []);
 
@@ -19,7 +19,7 @@ export default function Deck() {
     const res = await fetch(url);
     const data = await res.json();
     const res2 = await fetch(
-      `https://deckofcardsapi.com/api/deck/${data.deck_id}/draw/?count=24`
+      `https://deckofcardsapi.com/api/deck/${data.deck_id}/draw/?count=48`
     );
     const data2 = await res2.json();
 
