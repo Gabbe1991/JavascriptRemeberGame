@@ -1,5 +1,5 @@
 import "./App.css";
-import Deck from "./components-deck-components/deck-component/Deck";
+import deck from "./components-deck-components/deck-component/deck";
 
 function App() {
   return (
