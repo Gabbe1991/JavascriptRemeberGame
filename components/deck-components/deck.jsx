@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Card from "../../../../../Downloads/src/src/components/kort-components/kort";
+import Card from "../kort-components/kort";
 
 export default function Deck() {
   const [deck, setDeck] = useState([]);
